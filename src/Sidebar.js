@@ -5,7 +5,9 @@ function Sidebar({
     onAddNote, 
     onDeleteNote, 
     activeNote, 
-    setActiveNote }) {
+    setActiveNote,
+    // onHandleSave, 
+            }) {
 
         const sortedNotes = notes.sort((a, b) => b.lastModified - a.lastModified)
 
@@ -25,6 +27,7 @@ function Sidebar({
 
                     <div className="sidebar-note-title" >
                         <strong>{note.title}</strong>
+                        
                         <button onClick={() => onDeleteNote(note.id)} >Delete</button>
                     </div>
 
@@ -35,6 +38,7 @@ function Sidebar({
                         minute:
                         "2-digit",
                     })}
+                    {/* <button className="save-button" onClick={onHandleSave} >Save</button> */}
                     </small>
                 </div>
                 ))}

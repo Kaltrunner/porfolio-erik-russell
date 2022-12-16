@@ -8,13 +8,13 @@ import Sidebar from './Sidebar';
 function App() {
 
   const [notes, setNotes] = useState(JSON.parse(localStorage.notes) || []);
+  // const [notes, setNotes] = useState([])
   const [activeNote, setActiveNote] = useState(false);
-  // const [searchTerm, setSearchTerm] = useState("")
 
   // useEffect(() => {
-  //   fetch("")
+  //   fetch("http://localhost:9292/notes")
   //    .then(res => res.json())
-  //    .then(data => console.log(data))
+  //    .then(data => setNotes(data))
   // },[])
 
   useEffect(() => {
@@ -31,6 +31,7 @@ function App() {
     setNotes([newNote, ...notes]);
   }
 
+
   const onUpdateNote = (onUpdateNote) => {
     const updatedNotesArray = notes.map((note) => {
       if (note.id === activeNote) {
@@ -44,14 +45,33 @@ function App() {
   const onDeleteNote = (idToDelete) => {
     setNotes(notes.filter((note) => note.id !== idToDelete))
   }
+  // function onDeleteNote(id) {
+  //   fetch(`http://localhost:9292/notes/${id}`, {
+  //   method: "DELETE",
+  //   })
+  //   setNotes(notes.filter(note => note.id !== id))
+  
+  // }
+
+  // const onHandleSave = (id) => {
+  //   fetch(`http://localhost:9292/notes/${id}`, {
+  //     method: "patch",
+  //     headers: { 
+  //       'content-type': 'application/json'
+  //   },
+  //     body: JSON.stringify({
+  //       title: " ",
+  //       content: " ",
+  //     }
+  //   )}
+  //   )}
+
+
 
   const getActiveNote =  () => {
     return notes.find((note) => note.id === activeNote)
   }
 
-  // const onSearchTerm = () => {
-
-  // }
 
   return (
     <div className="App">
@@ -62,6 +82,7 @@ function App() {
       onDeleteNote={onDeleteNote} 
       activeNote={activeNote} 
       setActiveNote={setActiveNote} 
+      // onHandleSave={onHandleSave}
       />
 
       {/* <Search /> */}
@@ -74,5 +95,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

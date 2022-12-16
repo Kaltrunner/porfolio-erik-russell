@@ -9,7 +9,7 @@ function Main({ activeNote, onUpdateNote }) {
             lastModified: Date.now()
         })
     }
-    if(!activeNote) return < div className="no-active-note"> Click "ADD" to crate and start editing a new note! </div>
+    if(!activeNote) return < div className="no-active-note"> Click "ADD" to create and start editing a new note! </div>
 
     return (
         <div className="app-main" >
@@ -40,7 +40,7 @@ function Main({ activeNote, onUpdateNote }) {
 
             <textarea 
             id="body" 
-            placeholder="type you note here" 
+            placeholder="Add a note here..." 
             value={activeNote.body} onChange={(e) => onEditField("body", e.target.value)}
             />
 

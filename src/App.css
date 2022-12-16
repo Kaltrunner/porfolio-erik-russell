@@ -98,8 +98,9 @@ button:hover {
 
 /* NOTE SEARCH BAR (MAIN) STYLES */
 
-.app-main-note-search {
-  
+.save-button {
+  margin: 6px;
+  padding: 4px;
 }
 
 /* NOTE EDITOR/PREVIEW (MAIN) STYLES */
