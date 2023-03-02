@@ -10,11 +10,10 @@ function Samples() {
 
             <div className="sample-work-div" >
 
-            <a target="_blank" href="https://kaltrunner.github.io/agreensquare.github.io/" > <div className="sample-work-example" >
+            <a target="_blank" rel="noreferrer" href="https://kaltrunner.github.io/agreensquare.github.io/" > <div className="sample-work-example" >
                 <img className="project-1" src="Screenshot 2023-02-21 at 11.13.26 AM.png" alt="green square project website"/>
                 </div></a>
                 
-
                 <div className="sample-work-example" >
                     <img className="project-1" src="Screenshot 2023-02-21 at 11.54.40 AM.png" alt="" />
                 </div>

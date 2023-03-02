@@ -8,7 +8,6 @@ function Heading() {
         <div className="header-div-body" >
             
             <Link to="/Menu" ><button className="burger-button" >=</button></Link>
-            {/* <button className="burger-button" >=</button> */}
 
         </div>
     )

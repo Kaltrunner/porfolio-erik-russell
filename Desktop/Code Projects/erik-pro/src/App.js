@@ -32,8 +32,6 @@ function App() {
 
       {/* <Route path="/Clock" element={<Clock />} /> */}
 
-      
-      
     </Routes>
   );
 }

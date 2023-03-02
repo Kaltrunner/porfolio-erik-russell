@@ -13,7 +13,7 @@ function Landing() {
       <Heading />
       <div className="landing-text-div" id="under-line-div">
         <h1 className="title" id="under-line">
-          aPortfolio
+          EKRSL.Portfolio
         </h1>
 
         <div className="else-link" >

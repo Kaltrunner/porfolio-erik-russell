@@ -7,20 +7,23 @@ function Extra() {
                 <Clock />
             </div>
 
-            <p className="palette-text" >color palette</p>
             <div className="extra-stuff-div" >
+            <p className="palette-text" >color palette / </p><br/>
                 
                 <div className="outer">
                     <div className="inner"></div>
                 </div>
                 <div className="outer">
-                    <div className="inner" id="" ></div>
+                    <div className="inner" id="pink" ></div>
                 </div>
                 <div className="outer">
-                    <div className="inner" id="" ></div>
+                    <div className="inner" id="yellow" ></div>
                 </div>
                 <div className="outer">
-                    <div className="inner" id="" ></div>
+                    <div className="inner" id="grey" ></div>
+                </div>
+                <div className="outer" id="outer-white" >
+                    <div className="inner" id="white" ></div>
                 </div>
             </div>
 
